@@ -207,16 +207,3 @@ public class ShapeGeneratorController : ControllerBase
         return shapeData;
     }
 }
-
-// •	Isosceles Triangle  	 
-// • 	Square  
-// •	Scalene Triangle  		
-// •	Parallelogram  
-// •	Equilateral Triangle  	 
-// •	Pentagon  
-// •	Rectangle 
-// •	Hexagon  
-// •	Heptagon  
-// •	Octagon  
-// •	Circle  	 
-// •	Oval 
