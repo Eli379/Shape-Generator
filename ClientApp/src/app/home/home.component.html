@@ -1,6 +1,6 @@
 <h1>Lynkz Code Puzzle</h1>
 <h2>Shape Generator</h2>
-<p>Please enter what shape you would to generate.</p>
+<p>Please enter what shape you would to want generate.</p>
 <p>Here are some examples:</p>
 <ul>
   <li><i>Draw a circle with a radius of 100</i></li>
@@ -9,15 +9,25 @@
   <li><i>Draw an octagon with a side length of 200</i></li>
   <li><i>Draw an isosceles triangle with a height of 200 and width of 100</i></li>
 </ul>
+<p>You can also try 3D objects:</p>
+<ul>
+  <li><i>Draw a cylinder with a width of 250 and a height of 400</i></li>
+  <li><i>Draw a cube with a side length of 100</i></li>
+  <li><i>Draw a rectangular prism width of 50 side length of 200 and a height of 100</i></li>
+  <li><i>Draw a pyramid with a width of 100 and a height of 120</i></li>
+</ul>
+
+<div class="text-danger fst-italic p-3">
+  Please make sure the phrase follows the same format as the examples.
+</div>
 
 <div class="input-group mb-3">
-  <input type="text" class="form-control" [(ngModel)]="input" placeholder="Enter phrase" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <input type="text" class="form-control" [(ngModel)]="input" placeholder="Enter phrase" aria-label="Recipient's username" aria-describedby="basic-addon2" >
   <div class="input-group-append">
     <button class="btn btn-outline-secondary" type="button" (click)="submit()">Submit</button>
   </div>
 </div>
 
 <div>
-  <div [class]="shape" [ngStyle]="bindCSSorCanvas()"></div>
-    <canvas #canvas width=650 height=500></canvas>
+    <canvas #canvas width=850 height=500 style="border-color:aliceblue; border-style: dotted;"></canvas>
 </div>
